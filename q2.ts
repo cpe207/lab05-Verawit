@@ -1,9 +1,13 @@
+// วีรวิชญ์  ยิ่งศิริธัญรัฐ  660612157
 // define interface for Student object
-/* Your code here */
-
+interface Student{
+name:string
+score:number
+}
 // assign interface/type to the function definition properly
-function findTopNames(students) {
-  /* Your code here */
+function findTopNames(students:Student[]) {
+  const Newarray = students.filter((parameter)=>parameter.score>8)
+   return Newarray.map((parameter)=> parameter.name);
 }
 
 // assign interface/type to the student1 object properly
